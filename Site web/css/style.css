@@ -20,8 +20,9 @@ h1 {
 #partLogo {
     background-color: #141414;
     display: flex;
-    border: 1px solid #404040;
+    /* border: 1px solid #404040; */
     flex-wrap: wrap;
+    width: 100%;
 }
 
 #logo {
@@ -45,7 +46,8 @@ nav ul {
     flex-wrap: wrap;
     list-style: none;
     font-size: 23px;
-    border: 1px solid #404040;
+    width: 100%;
+    /* border: 1px solid #404040; */
     background-color: #141414;
     text-transform: uppercase;
 }

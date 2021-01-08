@@ -23,80 +23,39 @@
     <section id="partLogo">
       <img id="logo" src="../img/Logo1.png" alt="">
       <h1 id="titre">Festival de Littérature</h1>
+      <div class="profile-card-wrap">
+        <input id="check" type="checkbox" class="check"><label for="check" class="toggle"> <p> + </p> </label>
+        <div class="content" data-text="Bonjour !">
+          <div class="title">Alexis Rouyer</div>
 
-
-      <!-- Section se connecter: -->
-      <button id="login">Se connecter</button>
-      <div id="id01" class="modal">
-        <form class="modal-content animate">
-          <div class="imgcontainer">
-            <img class="avatar " src="../img/avatar.png" alt="Avatar">
-          </div>
-          <div class="container">
-            <label for="uname"><b>Login</b></label>
-            <input type="text" placeholder="Enter Username" name="name" required>
-
-            <label for="psw"><b>Mot de passe</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <button id="mdp" type="button">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </div>
-          <div class="container">
-            <button id="close" type="button">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Section Nouveau mot de passe : -->
-    <div id="id02" class="modal">
-      <form onSubmit="return verify(this.pass, this.pass2)" class="modal-content animate">
-        <div class="container">
-          <h4>Nouveau mot de passe:</h4>
-
-          <input type="password" class="mot_de_passe" name="pass">
-          <ul>
-            <li class="taille-mdp"></li>
-            <li class="min-mdp"></li>
-            <li class="maj-mdp"></li>
-            <li class="chiffre-mdp"></li>
-          </ul>
-
-          <h4>Confirmer mot de passe:</h4>
-          <input type="password" class="mot_de_passe" name="pass2">
-          <ul>
-            <li class="taille-mdp"></li>
-            <li class="min-mdp"></li>
-            <li class="maj-mdp"></li>
-            <li class="chiffre-mdp"></li>
-          </ul>
-          <input onclick="window.location.href = '../html/profilAj.html'" value="Envoyer">
         </div>
-      </form>
-    </div>
+        <div class="link-info">
+          <div class="social">
+            <a class="link tw" href="https://twitter.com/igor_marty" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a class="link li" href="https://fr.linkedin.com/in/igormarty" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="link gp" href="https://plus.google.com/u/0/+IgorMarty" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+          </div>
+          <div class="photo"></div>
+        </div>
+      </div>
 
-    <section class="menu">
-      <nav>
-        <ul>
-          <li><a href="../html/associtation.html">Association</a>
-          </li>
-          <li><a href="../html/oeuvre.html">Œuvres</a>
-          </li>
-          <li><a href="../html/reglement.html">Règlement</a>
-          </li>
-          <li><a href="../html/retrospective.html">Rétrospective</a>
-          </li>
-          <li><a href="../html/participation.html">Participation</a>
-          </li>
-
-        </ul>
-      </nav>
-
-    </section>
+      <section class="menu">
+        <nav>
+          <ul>
+            <li><a href="../html/associtation.html">Association</a>
+            </li>
+            <li><a href="../html/oeuvre.html">Œuvres</a>
+            </li>
+            <li><a href="../html/reglement.html">Règlement</a>
+            </li>
+            <li><a href="../html/retrospective.html">Rétrospective</a>
+            </li>
+            <li><a href="../html/participation.html">Participation</a>
+            </li>
+  
+          </ul>
+        </nav>
+  
   </header>
 
 
