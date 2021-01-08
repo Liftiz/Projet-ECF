@@ -1,0 +1,110 @@
+body, html {
+    font-family: 'Varela Round', sans-serif;
+}
+
+#livres1 {
+    margin: 5px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#livres2 {
+    margin: 5px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#livres3 {
+    margin: 5px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#livres4 {
+    margin: 5px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    width: 350px;
+}
+
+p:first-of-type::before {
+    font-style: italic;
+    font-family: Georgia, serif;
+    content: "\201C\A0";
+    font-size: 80px;
+    line-height: .1em;
+    color: #666;
+}
+
+p:last-of-type::after {
+    font-style: italic;
+    position: relative;
+    font-family: Georgia, serif;
+    content: "\00201D  ";
+    font-size: 80px;
+    line-height: .1em;
+    color: #666;
+    top: 42px;
+}
+
+#seigneur {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+#extrait {
+    position: relative;
+    top: -400px;
+    left: 200px;
+    float: left;
+}
+
+#bio {
+    position: relative;
+    top: -400px;
+    right: -650px;
+    float: right;
+}
+
+#bio button {
+    position: relative;
+    right: 150px;
+    border: none;
+}
+
+#bio button a img {
+    width: 200px;
+}
+
+#bio a {
+    margin-left: 50px;
+    color: #141414;
+    text-decoration: none;
+}
+
+h4, h5 {
+    text-transform: uppercase;
+    color: #c9a460;
+}
+
+#commentaires {
+    color: #c9a460;
+    margin-left: auto;
+    margin-right: auto;
+}

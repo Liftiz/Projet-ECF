@@ -1,0 +1,78 @@
+body, html {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.placement {
+    display: flex;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+#milieu {
+    width: auto;
+    display: flex;
+}
+
+#syno {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+}
+
+#comment {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: auto;
+}
+
+#telech {
+    text-align: center;
+}
+
+#telech input {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bTele {
+    color: #c9a460;
+}
+
+input[type="radio"] {
+    /* Renouvelle l'apparence de l'input: */
+    appearance: none;
+    /* Création d'un nouveau input */
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+    /* background */
+    background-clip: content-box;
+    border: 1px solid #bbbbbb;
+    background-color: #e7e6e7;
+    border-radius: 50%;
+}
+
+/* Apparence quand l'input est checké */
+
+input[type="radio"]:checked {
+    background-color: #c9a460;
+}
+
+#envoyeB {
+    margin-left: 555px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,62 @@
+body, html {
+	font-family: 'Varela Round', sans-serif;
+}
+
+.contain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#profil {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mesimages img {
+	border: 5px solid white;
+	border-radius: 50%;
+	box-sizing: border-box;
+	transition: .5s;
+	margin-left: 10px;
+	filter: grayscale(1);
+	width: 150px;
+}
+
+.mesimages img:last-of-type {
+	margin-right: 10px;
+}
+
+.mesimages img:hover {
+	transform: scale(1.5);
+	filter: grayscale(0);
+	z-index: 10;
+	border-radius: 0;
+}
+
+.mesimages:hover img:not(:hover) {
+	filter: grayscale(1) blur(3px);
+}
+
+a {
+	color: #c9a460;
+}
+
+a:hover {
+	color: #c9a460;
+}
+
+#jury .contain .mesimages img {
+	width: 200px;
+}
+
+figcaption {
+	text-align: center;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	font-family: 'Varela Round', sans-serif;
+}

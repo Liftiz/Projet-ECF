@@ -1,0 +1,67 @@
+body, html {
+    font-family: 'Varela Round', sans-serif;
+}
+
+#oeuvres {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tolkien {
+    height: 300px;
+    width: 200px;
+}
+
+#livreUn {
+    padding: 15px;
+}
+
+#livreUn a {
+    text-decoration: none;
+}
+
+#livreUn a p {
+    text-align: left;
+}
+
+#livreDeux {
+    padding: 15px;
+}
+
+#livreDeux a {
+    text-decoration: none;
+}
+
+#livreDeux a p {
+    text-align: left;
+}
+
+#livreTrois {
+    padding: 15px;
+}
+
+#livreTrois a {
+    text-decoration: none;
+}
+
+#livreTrois a p {
+    text-align: left;
+}
+
+#livreQuatre {
+    padding: 15px;
+}
+
+#livreQuatre a {
+    text-decoration: none;
+}
+
+#livreQuatre a p {
+    text-align: left;
+}
+
+h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #c9a460;
+}

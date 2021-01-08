@@ -1,0 +1,67 @@
+body, html {
+  font-family: 'Varela Round', sans-serif;
+}
+
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#imgL1 {
+  margin-left: 435px;
+}
+
+#imgL1 img {
+  width: 250px;
+}
+
+.rating, .average {
+  top: -350px;
+  left: 800px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  margin-right: 45px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.star {
+  display: inline-block;
+  font-size: 30px;
+  color: black;
+  position: relative;
+}
+
+.star.hidden {
+  opacity: 0;
+}
+
+.full:before {
+  content: "★";
+  position: relative;
+  z-index: 2;
+}
+
+.star-colour {
+  color: #c9a460
+}
+
+.selected.is-animated:before {
+  transition: 1s ease-out;
+}
+
+.score {
+  font-size: 20px;
+  color: #c9a460;
+}
+
+#notation {
+  display: flex;
+}
+
+.average {
+  position: relative;
+  left: 300px;
+}

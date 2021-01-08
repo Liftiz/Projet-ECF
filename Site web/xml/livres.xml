@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<bibliotheque>
+<livres id="01">
+<livre>
+<titre>
+Le seigneur des anneaux
+</titre>
+
+<auteurs>
+
+<auteur>
+J. R. R. Tolkien
+</auteur>
+</auteurs>
+
+<editeur>
+Galimard
+</editeur>
+
+<description>
+Trois anneaux pour les Rois Elfes sous le ciel,
+
+        Sept pour les Seigneurs Nains dans leurs demeures de pierre,
+        
+        Neuf pour les Hommes Mortels destinés au trépas,
+        
+        Un pour le Seigneur des Ténèbres sur son sombre trône
+        
+        Dans le Pays de Mordor où s'étendent les Ombres.
+        
+        Un anneau pour les gouverner tous,
+        
+        Un anneau pour les trouver,
+        
+        Un anneau pour les amener tous et dans les ténèbres les lier
+        
+        Au pays de Mordor où s'étendent les Ombres.
+</description>
+
+</livre>
+<pages>
+1591
+</pages>
+
+<couverture src="../img/livres1.png"/>
+<prix> 18.90 € </prix>
+<edition> 1ère édition </edition>
+<parution> 13/09/2018 </parution>
+
+<commentaire>
+La nouvelle traduction est vraiment bien, changer la communauté de l’anneau en fraternité de l'anneau est excellent car c'est la vraie traduction du titre original de Tolkien... Je suis moins fan par contre du changement du nom de famille Saquet par Bessac... Même si Bessac ressemble phonétiquement à Baggin, je ne vois pas ici l’intérêt ici d'avoir changé ce nom. Mais c'est un petit détail, Daniel Lauzon a fait un travail remarquable.
+</commentaire>
+
+<note>
+9.8/10
+</note>
+
+</livres>
+
+<livres id="02">
+<livre>
+<titre>
+Gastby le magnifique
+</titre>
+
+<auteurs>
+
+<auteur>
+Francis Scott Fitzgerald
+</auteur>
+</auteurs>
+
+<editeur>
+Galimard
+</editeur>
+
+<description>
+Dès mon âge le plus tendre et le plus facile à influencer, mon père m'a donné un certain conseil que je n'ai jamais oublié.
+ « Chaque fois que tu te prépares à critiquer quelqu'un, m'a-t-il dit, souviens-toi qu'en venant sur terre tout le monde n'a pas eu droit aux mêmes avantages que toi. »
+</description>
+
+</livre>
+<pages>
+300
+</pages>
+
+<couverture src="../img/livres2.png"/>
+<prix> 8.60 € </prix>
+<edition> 1ère édition </edition>
+<parution> 18/02/2021 </parution>
+
+<commentaire>
+Mon Dieu mais quelle bouse. C'est ça le chef d'oeuvre de FS Fitzgerald? 200 pages d'un ennui mortel à suivre les insignifiantes aventures de personnages fades, transparents et incroyablement superficiels. Et ben ça ne donne pas du tout envie de lire ses autres romans. Le seul point positif du roman, c'est qu'il est court du coup on s'emmerde pendant moins longtemps.Quoique ... car le temps peut paraitre bien long dans ces conditions.
+</commentaire>
+
+<note>
+3/10
+</note>
+
+</livres>
+
+
+<livres id="03">
+<livre>
+<titre>
+Cent ans de solitude
+</titre>
+
+<auteurs>
+
+<auteur>
+Gabriel Garcia Marquez 
+</auteur>
+</auteurs>
+
+<editeur>
+ Points, Seuil
+</editeur>
+
+<description>
+À Macondo, petit village isolé d'Amérique du Sud, l'illustre famille Buendia est condamnée à cent ans de solitude par la prophétie du gitan Melquiades...
+</description>
+
+</livre>
+<pages>
+437
+</pages>
+
+<couverture src="../img/livres3.png"/>
+<prix> 8.50 € </prix>
+<edition> 1ère édition </edition>
+<parution> 21/02/1995  </parution>
+
+<commentaire>
+Roman picaresque foisonnant de personnages plus attachants les uns que les autres 
+</commentaire>
+
+<note>
+7/10
+</note>
+
+</livres>
+
+<livres id="04">
+<livre>
+<titre>
+A la recherche du temps perdu   
+</titre>
+
+<auteurs>
+
+<auteur>
+Marcel Proust
+</auteur>
+</auteurs>
+
+<editeur>
+ Galimard
+</editeur>
+
+<description>
+Un petit coup au carreau, comme si quelque chose l'avait heurté, suivi d'une ample chute légère comme de grains de sable qu'on eût laissé tomber.
+</description>
+
+</livre>
+<pages>
+257
+</pages>
+
+<couverture src="../img/livres4.png"/>
+<prix> 16.50 € </prix>
+<edition> 1ère édition </edition>
+<parution> 01/01/1992  </parution>
+<commentaire>
+Incontournable, une écriture qui vous emporte.J'ai pris le temps de comparer les éditions, pour faire un cadeau, et pour moi cette édition est la plus agréable à lire, typographie, contraste, c'est la plus lisible, en un seul tome. 
+</commentaire>
+
+<note>
+5.9/10
+</note>
+
+
+</livres>
+
+</bibliotheque>

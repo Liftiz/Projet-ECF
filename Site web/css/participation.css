@@ -1,0 +1,25 @@
+body, html {
+    font-family: 'Varela Round', sans-serif;
+}
+
+ul {
+    text-align: center;
+}
+
+#regle li {
+    list-style-type: decimal;
+}
+
+button a {
+    color: #c9a460;
+}
+
+button a:hover {
+    color: #c9a460;
+    text-decoration: none;
+}
+
+h4 {
+    text-align: center;
+    text-decoration: underline;
+}

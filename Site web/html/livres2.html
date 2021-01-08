@@ -1,0 +1,150 @@
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gatsby le magnifique </title>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script defer src="../js/livres.js"></script>
+  <script defer src="../js/login.js"></script>
+  <script defer src="../js/motdepasse.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/livres.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/motdepasse.css">
+</head>
+
+<body>
+  <header>
+    <section id="partLogo">
+      <img id="logo" src="../img/Logo1.png" alt="">
+      <h1 id="titre">Festival de Littérature</h1>
+
+
+      <!-- Section se connecter: -->
+      <button id="login">Se connecter</button>
+      <div id="id01" class="modal">
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <img class="avatar " src="../img/avatar.png" alt="Avatar">
+          </div>
+          <div class="container">
+            <label for="uname"><b>Login</b></label>
+            <input type="text" placeholder="Enter Username" name="name" required>
+
+            <label for="psw"><b>Mot de passe</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button id="mdp" type="button">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+          <div class="container">
+            <button id="close" type="button">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section Nouveau mot de passe : -->
+    <div id="id02" class="modal">
+      <form onSubmit="return verify(this.pass, this.pass2)" class="modal-content animate">
+        <div class="container">
+          <h4>Nouveau mot de passe:</h4>
+
+          <input type="password" class="mot_de_passe" name="pass">
+          <ul>
+            <li class="taille-mdp"></li>
+            <li class="min-mdp"></li>
+            <li class="maj-mdp"></li>
+            <li class="chiffre-mdp"></li>
+          </ul>
+
+          <h4>Confirmer mot de passe:</h4>
+          <input type="password" class="mot_de_passe" name="pass2">
+          <ul>
+            <li class="taille-mdp"></li>
+            <li class="min-mdp"></li>
+            <li class="maj-mdp"></li>
+            <li class="chiffre-mdp"></li>
+          </ul>
+          <input onclick="window.location.href = '../html/profilAj.html'" value="Envoyer">
+        </div>
+      </form>
+    </div>
+
+    <section class="menu">
+      <nav>
+        <ul>
+          <li><a href="../html/associtation.html">Association</a>
+          </li>
+          <li><a href="../html/oeuvre.html">Œuvres</a>
+          </li>
+          <li><a href="../html/reglement.html">Règlement</a>
+          </li>
+          <li><a href="../html/retrospective.html">Rétrospective</a>
+          </li>
+          <li><a href="../html/participation.html">Participation</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </section>
+  </header>
+
+  <img id="livres2" src="../img/livre2.PNG" />
+
+  <section id="seigneur">
+    <section id="extrait">
+      <h4>Extrait:</h4>
+      <p>Dès mon âge le plus tendre et le plus facile à influencer, mon père m'a donné un certain conseil que je n'ai
+        jamais oublié.
+
+        « Chaque fois que tu te prépares à critiquer quelqu'un, m'a-t-il dit, souviens-toi qu'en venant sur terre tout
+        le monde n'a pas eu droit aux mêmes avantages que toi. »</p>
+      <a id="commentaires" href="../xml/livres.xml" download="Commentaire Jurés">Voulez vous télécharger les
+        commentaires des jurés ? </a>
+    </section>
+
+    <section id="bio">
+      <h4>Biographie</h4>
+      <p>Francis Scott Key Fitzgerald, né le 24 septembre 1896 à Saint Paul, Minnesota et mort le 21 décembre 1940 à
+        Hollywood,
+        est un écrivain américain. Chef de file de la Génération perdue et représentant de l'Ère du Jazz,
+        il est aussi celui qui lance la carrière d'Ernest Hemingway</p>
+
+      <h5>Commander le livre dans notre boutique partenaire</h5>
+      <button><a href="https://www.librairiepradoparadis.fr/product/189186/gatsby-le-magnifique" target="_blank"
+          rel="noopener noreferrer"><img src="../img/logoPartenaire.jpg" alt=""></a></button>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flivre.fnac.com%2Fa4019796%2FFrancis-Scott-Fitzgerald-Gatsby-le-magnifique"
+        class="share facebook" data-network="facebook">Partager sur Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=Gatsby le magnifique - Poche - Francis Scott Fitzgerald%2C Philippe Jaworski - Achat Livre | fnac %23fnac&url=https%3A%2F%2Flivre.fnac.com%2Fa4019796%2FFrancis-Scott-Fitzgerald-Gatsby-le-magnifique"
+        class="share twitter" data-network="twitter">Partager sur Twitter</a>
+    </section>
+  </section>
+  <footer>
+    <h4>Festival de littérature</h4>
+    <ul id="plan">
+      <li> <a href="http://" target="_blank" rel="noopener noreferrer">Crédit</a></li>
+      <li> <a href="../html/contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+      <li> <a href="http://" target="_blank" rel="noopener noreferrer">Plan du site</a></li>
+      <li> <a href="http://" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a></li>
+
+    </ul>
+    <ul id="iconR">
+      <li><img src="https://img.icons8.com/color/48/000000/facebook-f.png" /></li>
+      <li><img src="https://img.icons8.com/color/48/000000/twitter--v1.png" /></li>
+      <li><img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" /></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+body, html {
+    font-family: 'Varela Round', sans-serif;
+}
+
+#asso {
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+#accueil {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#boutonR {
+    display: flex;
+}

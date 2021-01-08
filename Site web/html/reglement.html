@@ -1,0 +1,189 @@
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Règlement </title>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script defer src="../js/livres.js"></script>
+  <script defer src="../js/login.js"></script>
+  <script defer src="../js/motdepasse.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/reglement.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/motdepasse.css">
+</head>
+
+<body>
+  <header>
+    <section id="partLogo">
+      <img id="logo" src="../img/Logo1.png" alt="">
+      <h1 id="titre">Festival de Littérature</h1>
+
+
+      <!-- Section se connecter: -->
+      <button id="login">Se connecter</button>
+      <div id="id01" class="modal">
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <img class="avatar " src="../img/avatar.png" alt="Avatar">
+          </div>
+          <div class="container">
+            <label for="uname"><b>Login</b></label>
+            <input type="text" placeholder="Enter Username" name="name" required>
+
+            <label for="psw"><b>Mot de passe</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button id="mdp" type="button">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+          <div class="container">
+            <button id="close" type="button">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section Nouveau mot de passe : -->
+    <div id="id02" class="modal">
+      <form onSubmit="return verify(this.pass, this.pass2)" class="modal-content animate">
+        <div class="container">
+          <h4>Nouveau mot de passe:</h4>
+
+          <input type="password" class="mot_de_passe" name="pass">
+          <ul>
+            <li class="taille-mdp"></li>
+            <li class="min-mdp"></li>
+            <li class="maj-mdp"></li>
+            <li class="chiffre-mdp"></li>
+          </ul>
+
+          <h4>Confirmer mot de passe:</h4>
+          <input type="password" class="mot_de_passe" name="pass2">
+          <ul>
+            <li class="taille-mdp"></li>
+            <li class="min-mdp"></li>
+            <li class="maj-mdp"></li>
+            <li class="chiffre-mdp"></li>
+          </ul>
+          <input onclick="window.location.href = '../html/profilAj.html'" value="Envoyer">
+        </div>
+      </form>
+    </div>
+
+    <section class="menu">
+      <nav>
+        <ul>
+          <li><a href="../html/associtation.html">Association</a>
+          </li>
+          <li><a href="../html/oeuvre.html">Œuvres</a>
+          </li>
+          <li><a href="../html/reglement.html">Règlement</a>
+          </li>
+          <li><a href="../html/retrospective.html">Rétrospective</a>
+          </li>
+          <li><a href="../html/participation.html">Participation</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </section>
+  </header>
+
+  <h1>RÈGLEMENT DU FESTIVAL DE LITTERATURE</h1>
+
+  <section id="reglement">
+
+    <section id="partieG">
+      <h4>Article1: DISPOSITION GÉNÉRALES</h4>
+      <p>Les inscriptions des exposants sont reçues pour
+        le compte de l’AssociationÉtonnants Voyageurs à l’adresse suivante :
+      <h5><br> BBIBLIO <br> ter ruelle des Vignes <br>35160 Talensac <br></h5>
+      <p>BBIBLIO détient seule le pouvoir de choisir les exposantsadmis à exposer au Salon.Plus encore, elle a pour
+        mission de vérifier queles orientations éditoriales des
+        exposants correspondent bien à l’éthique du festival</p>
+
+
+      <h4>Article 2: DEMANDES DE PARTICIPATION ETCONTRÔLE DES ADMISSIONS</h4>
+      <p>Les demandes de participation se font uniquement via le formulaire d’inscriptionen ligne sur le site Internet
+        du festival.Ces demandes de participationsont étudiées par BBIBLIO qui prendseule les décisions pour
+        l’admission, l’attribution ou le refus d’inscription.
+        BBIBLIO n’est pas tenue de motiver les décisionsqu’elle prend quant aux demandes de participation.L’acceptation
+        de la participationest constatée par la réponse de l’organisateur
+        à l’exposant etl’envoi d’un dossier d’inscription.</p>
+
+      <h4>Article3: INSCRIPTIONS</h4>
+      <p>Pour valider son inscription, l’exposant s’engage à retourner à BBIBLIO, avant le X, le dossier d’inscription
+        rempli etsigné, accompagnéde deux chèques de 50% du montant
+        correspondant à la location du stand,l’un encaissé à réception, l’autre encaissé au 8mai 2020(chèquesà l'ordre
+        de l'Association Étonnants Voyageurs).Possibilité de paiement par
+        virement auxmêmes échéances.En cas de non respect de ces échéances,lesm2 réservés sontattribués aux exposants
+        sur liste d’attente.</p>
+    </section>
+
+    <section id="partieD">
+      <h4>Article4: DÉSISTEMENT</h4>
+      <p>Tout désistement doit être formulé 30 jours avant la date d’installation notifiée sur la demande d’admission
+        (cachet de la poste faisant foi), auquelcas l’exposant est redevable de la totalité du montant de la location.
+        En casde litige,
+        seuls les tribunaux de Rennes sont compétents.</p>
+
+      <h4>Article14: APPLICATION DU RÈGLEMENT</h4>
+      <p>Du fait de la signature de la demande de participation, l’exposant s’engageà respecter dans sa totalité le
+        règlement général du salon ainsi que les décisions qui peuvent être prises par BBIBLIO ou à la requête des
+        administrations préfectorales ou municipales (mesure de police, de sécurité, etc.).Il s’engage également à
+        observer les règles d’ordre de sécurité, d’hygiène et de commerce prises par BBIBLIO ou les autorités publiques,
+        et à se conformer aux lois et décrets en vigueur les concernant.En cas de non-respect du règlement,le renvoi
+        immédiat peut être prononcé sans qu’il puisse être réclamé ni dédommagement, ni remboursement des sommes versées
+        par l’exposant frappé par cette décision, et sans possibilité pour ce dernier d’exercer des poursuites contre
+        BBIBLIO.</p>
+
+      <h4>Article15: CONTESTATION</h4>
+      <p>En cas de contestation, et quelles qu’elles soient, seuls les tribunaux de CANNES sont compétents.</p>
+    </section>
+
+  </section>
+
+  <button><a href="../img/règlement.pdf" download="Règlement du Festival">Télécharger le règlement en PDF</a></button>
+
+
+  <section id="contact">
+    <h4>Contactez nous</h4>
+    <section id="Gauche">
+      <h5><br> BBIBLIO <br> ter ruelle des Vignes <br>35160 Talensac <br> Email</h5>
+    </section>
+    <h5>Vous avez une demande à formuler ou souhaitez faire une suggestion? </h5>
+    <a href="../html/contact.html" target="_blank" rel="noopener noreferrer">Formulaire de contact</a>
+
+  </section>
+
+
+  <div class="clear" style="clear:both"></div>
+  <footer>
+    <h4>Festival de littérature</h4>
+    <ul id="plan">
+      <li> <a href="http://" target="_blank" rel="noopener noreferrer">Crédit</a></li>
+      <li> <a href="../html/contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+      <li> <a href="http://" target="_blank" rel="noopener noreferrer">Plan du site</a></li>
+      <li> <a href="http://" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a></li>
+    </ul>
+    <ul id="iconR">
+      <li><img src="https://img.icons8.com/color/48/000000/facebook-f.png" /></li>
+      <li><img src="https://img.icons8.com/color/48/000000/twitter--v1.png" /></li>
+      <li><img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" /></li>
+    </ul>
+  </footer>
+  </div>
+</body>
+
+</html>

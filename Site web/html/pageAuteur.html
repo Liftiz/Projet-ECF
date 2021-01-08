@@ -1,0 +1,170 @@
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription Auteur</title>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script defer src="../js//login.js"></script>
+  <script defer src="../js/motdepasse.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/pageAuteur.css">
+  <link rel="stylesheet" href="../css/motdepasse.css">
+</head>
+
+<body>
+  <header>
+    <section id="partLogo">
+      <img id="logo" src="../img/Logo1.png" alt="">
+      <h1 id="titre">Festival de Littérature</h1>
+
+
+      <!-- Section se connecter: -->
+      <button id="login">Se connecter</button>
+      <div id="id01" class="modal">
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <img class="avatar " src="../img/avatar.png" alt="Avatar">
+          </div>
+          <div class="container">
+            <label for="uname"><b>Login</b></label>
+            <input type="text" placeholder="Enter Username" name="name" required>
+
+            <label for="psw"><b>Mot de passe</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button id="mdp" type="button">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+          <div class="container">
+            <button id="close" type="button">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Section Nouveau mot de passe : -->
+    <div id="id02" class="modal">
+      <form onSubmit="return verify(this.pass, this.pass2)" class="modal-content animate">
+        <div class="container">
+          <h4>Nouveau mot de passe:</h4>
+
+          <input type="password" class="mot_de_passe" name="pass">
+          <ul>
+            <li class="taille-mdp"></li>
+            <li class="min-mdp"></li>
+            <li class="maj-mdp"></li>
+            <li class="chiffre-mdp"></li>
+          </ul>
+
+          <h4>Confirmer mot de passe:</h4>
+          <input type="password" class="mot_de_passe" name="pass2">
+          <ul>
+            <li class="taille-mdp"></li>
+            <li class="min-mdp"></li>
+            <li class="maj-mdp"></li>
+            <li class="chiffre-mdp"></li>
+          </ul>
+          <input onclick="window.location.href = '../html/profilAj.html'" value="Envoyer">
+        </div>
+      </form>
+    </div>
+
+    <section class="menu">
+      <nav>
+        <ul>
+          <li><a href="../html/associtation.html">Association</a>
+          </li>
+          <li><a href="../html/oeuvre.html">Œuvres</a>
+          </li>
+          <li><a href="../html/reglement.html">Règlement</a>
+          </li>
+          <li><a href="../html/retrospective.html">Rétrospective</a>
+          </li>
+          <li><a href="../html/participation.html">Participation</a>
+          </li>
+
+        </ul>
+      </nav>
+
+    </section>
+  </header>
+
+
+  <h1>Information général de l'oeuvre</h1>
+  <!-- Section titre: -->
+  <section id="bTitre" class="placement">
+    <h4>Titre de l'oeuvre:</h4>
+    <input type="text" placeholder="Titre">
+  </section>
+
+  <!-- Section Catégorie: -->
+  <section id="categorie" class="placement">
+    <h4>Catégorie:</h4>
+    <form id="button">
+      <input type="radio" name="categorie" value="fr">
+      <label for="">Français</label>
+      <input type="radio" name="categorie" value="et">
+      <label for="">Etranger</label>
+      <input type="radio" name="categorie" value="bio">
+      <label for=""> Biographie</label>
+      <input type="radio" name="categorie" value="doc">
+      <label for="">Documentaire</label>
+    </form>
+  </section>
+
+  <!-- Section synopsie: -->
+  <section id="milieu">
+    <section id="syno">
+      <h4>Synopsie:</h4>
+      <input id="bSyno" type="text" placeholder="Entrer un résumer de votre oeuvre">
+    </section>
+
+    <!-- Section Commentaire: -->
+    <section id="comment">
+      <h4>Commentaire</h4>
+      <input id="bComment" type="text" placeholder="Un commentaire à rajouter ?">
+    </section>
+  </section>
+  <section id="tele">
+    <!-- Section télécharger: -->
+    <section id="telech">
+      <h4>Télécharger votre oeuvre:</h4>
+      <input id="bTele" type="file" name="upload" accept="application/pdf,application/vnd.ms-excel" />
+    </section>
+  </section>
+
+
+  <!-- Commentaire BDD: -->
+  <!-- L'auteur rentre toutes les informations nécessaires, touts est intégrer dans la BDD une fois le bouton "Envoyer" cliquer -->
+  <input id="envoyeB" type="submit" value="Envoyer">
+
+
+
+  <footer>
+    <h4>Festival de littérature</h4>
+    <ul id="plan">
+      <li> <a href="http://" target="_blank" rel="noopener noreferrer">Crédit</a></li>
+      <li> <a href="../html/contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
+      <li> <a href="http://" target="_blank" rel="noopener noreferrer">Plan du site</a></li>
+      <li> <a href="http://" target="_blank" rel="noopener noreferrer">Politique de confidentialité</a></li>
+
+    </ul>
+    <ul id="iconR">
+      <li><img src="https://img.icons8.com/color/48/000000/facebook-f.png" /></li>
+      <li><img src="https://img.icons8.com/color/48/000000/twitter--v1.png" /></li>
+      <li><img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" /></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
