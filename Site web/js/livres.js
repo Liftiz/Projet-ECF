@@ -32,17 +32,17 @@ $("#livres2").hover(
 
   $('a.share').click(function(e){
 	e.preventDefault();
-	var $link   = $(this);
-	var href    = $link.attr('href');
-	var network = $link.attr('data-network');
+	let $link   = $(this);
+	let href    = $link.attr('href');
+	let network = $link.attr('data-network');
 
-	var networks = {
+	let networks = {
 		facebook : { width : 600, height : 300 },
 		twitter  : { width : 600, height : 254 }
 	};
 
-	var popup = function(network){
-		var options = 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,';
+	let popup = function(network){
+		let options = 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,';
 		window.open(href, '', options+'height='+networks[network].height+',width='+networks[network].width);
 	}
 

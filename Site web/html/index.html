@@ -29,6 +29,9 @@
       <!-- Commentaire BDD: -->
       <!-- L'utilisateur rentre les informations donner par email. Ceci sera comparer avec le login et mot de passe qui se trouve dans la base de donnée
           pour voir si tout es correct -->
+          <!-- Un login et mot de passe sont déjà definie: -->
+          <!-- LOGIN: alexis
+          MOT DE PASSE: rouyer -->
       <!-- Section se connecter: -->
       <button id="login">Se connecter</button>
       <div id="id01" class="modal">
@@ -38,10 +41,10 @@
           </div>
           <div class="container">
             <label for="uname"><b>Login</b></label>
-            <input type="text" placeholder="Enter Username" name="name" required>
+            <input id="name" type="text" placeholder="Enter Username" name="name" required>
 
             <label for="psw"><b>Mot de passe</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
 
             <button id="mdp" type="button">Login</button>
             <label>
